@@ -37,7 +37,7 @@ Return:
       "end": 0,
       "topic": "string",
       "evidence": "short exact/paraphrased evidence from supplied text"
-   } }
+    }}
   ],
   "reason": "string"
 }}
