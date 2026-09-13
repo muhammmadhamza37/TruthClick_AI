@@ -5,13 +5,13 @@ Extract the promise/claim made by the title. Do not assume facts not present.
 A person's name appearing in a title is not itself a claim.
 
 Required JSON:
-{{
+{
   "main_topic": "string",
   "claim": "string",
   "claim_type": "factual|opinion|question|entertainment|other",
   "key_entities": ["string"],
   "expected_content": "string"
-}}
+}
 
 Title:
 {title}
@@ -28,19 +28,19 @@ Use one support_level:
 strong_support, partial_support, weak_relevance, no_support, contradiction
 
 Return:
-{{
+{
   "support_level": "string",
   "evidence_found": true,
   "relevant_segments": [
-    {{
+    {
       "start": 0,
       "end": 0,
       "topic": "string",
       "evidence": "short exact/paraphrased evidence from supplied text"
-    }}
+    }
   ],
   "reason": "string"
-}}
+}
 
 Claim:
 {claim_json}
@@ -54,11 +54,11 @@ Use ONLY the supplied claim analysis and content analysis.
 Do not claim objective truth. Judge whether the video content sufficiently delivers the promise made by the title.
 
 Return ONLY valid JSON:
-{{
+{
   "verdict": "CLICKBAIT|NON_CLICKBAIT|INCONCLUSIVE",
   "confidence": 0.0,
   "reason": "short explanation"
-}}
+}
 
 Guidance:
 - Strong support normally indicates NON_CLICKBAIT.
