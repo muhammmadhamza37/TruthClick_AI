@@ -7,8 +7,7 @@ from transcript import group_segments
 
 # Keep each request comfortably below Groq's 8K TPM limit.
 MAX_TRANSCRIPT_CHARS = 9000
-MAX_OUTPUT_TOKENS = 500
-
+MAX_OUTPUT_TOKENS = 1000
 
 def _client():
     key = os.getenv("GROQ_API_KEY")
